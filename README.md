@@ -1,3 +1,5 @@
+### I built upon a previously started project, I expanded the functionality of the captcha cracking bot greatly within my 8 week internship ###
+
 # CAPTCHA Implementation with reCAPTCHA v2
 
 In learning about the implemenation of CAPTCHA, the HTML file here uses reCAPTCHA v2 for simplicity sake. However, reCAPTCHA and hCAPTCHA, the most popular types of CAPTCHA services, implement their CAPTCHA services using a host name, domain name or IP address which means we can't simplfy run the HTML standalone since the CAPTCHA mechanism will break. The way I found to get around this is to launch a web server locally through the use of Visual Studio code extension named Live Server. 
