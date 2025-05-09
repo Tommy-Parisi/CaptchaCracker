@@ -1,0 +1,43 @@
+#Random Captcha generator
+
+from random import choice
+
+A = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+a = "abcdefghijklmnopqrstuvwxyz"
+Num = "0123456789"
+
+captcha = ""
+for i in range(2):
+    captcha+=choice(A)+choice(a)+choice(Num)
+
+print("Your Captcha : ",captcha)   
+
+Results
+Your Captcha :  Na6Xo0
+
+
+
+#Create captcha image and audiofile
+
+from captcha.image import ImageCaptcha
+
+image = ImageCaptcha(width = 280, height = 90)
+
+data = image.generate('hello17world')
+
+image.write('hello17world', 'demo.png')
+
+from captcha.audio import AudioCaptcha
+
+audio = AudioCaptcha()
+data = audio.generate('789')
+audio.write('789','demo2.wav')
+
+
+from captcha.image import ImageCaptcha
+
+image = ImageCaptcha(width = 300, height = 100)
+
+data = image.generate('courtney.captcha86')
+
+image.write('courtney.captcha86', 'courtney.png')

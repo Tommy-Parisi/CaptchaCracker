@@ -1,0 +1,10 @@
+selenium 
+pyautogui
+Pillow 
+webdriver-manager
+opencv-python 
+torch 
+torchvision 
+ultralytics
+argparse
+pytesseract
